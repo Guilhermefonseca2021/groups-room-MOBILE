@@ -6,7 +6,7 @@ import  { UsersThree } from 'phosphor-react-native'
 
 // entre ( ) pq vou precisar das propriedades dele (para funcionar a tipagem no nosso .tsx)
 export const Container = styled(TouchableOpacity)`
-    width: 90%;
+    width: 100%;
     height: 90px;
 
     background-color: ${({ theme }: DefaultTheme) => theme.COLORS.GRAY_500};
