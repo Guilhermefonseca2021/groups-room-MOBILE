@@ -30,3 +30,10 @@
 
 ![ignite_groups](https://github.com/Guilhermefonseca2021/groups-room-MOBILE/assets/92196697/ab2f2552-5bdc-4d3c-8a4e-fdc6308c0937)
 
+
+
+## Insights
+
+button Props, no component butao, tem dois tipos PRIMARY & SECONDARY.
+
+

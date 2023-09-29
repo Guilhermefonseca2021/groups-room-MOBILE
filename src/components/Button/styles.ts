@@ -17,6 +17,7 @@ export const Container = styled(TouchableOpacity) <Props>`
     /* nosso tema definido com base nas props */
     background-color: ${({ theme, type }: DefaultTheme) => type === 'PRIMARY' ? theme.COLORS.GREEN_700 : theme.COLORS.RED_DARK};
     
+    width: 90%;
     border-radius: 6px;
     align-items: center;
 `;
@@ -24,7 +25,10 @@ export const Container = styled(TouchableOpacity) <Props>`
 export const Title = styled.Text`
     font-size: ${({ theme }: DefaultTheme) => theme.FONT_SIZE.MD};
     color: ${({ theme }: DefaultTheme) => theme.COLORS.WHITE};
-    font-family: ${({ theme }: DefaultTheme) => theme.FONT_FAMILY.BOLD}
+    font-family: ${({ theme }: DefaultTheme) => theme.FONT_FAMILY.BOLD};
+
+    align-items: center;
+    justify-content: center;
 `;
 
 

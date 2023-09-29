@@ -1,15 +1,20 @@
-import { TouchableOpacity, TouchableOpacityProps } from "react-native/Libraries/Components/Touchable/TouchableOpacity"
+import { TouchableOpacityProps } from "react-native/Libraries/Components/Touchable/TouchableOpacity"
 import { Container, Title, ButtonTypeStyleProps } from "./styles"
 
-// igual a todas propriedades que um touchopcity possui
+// Onde eu for usar esse component declaro o tipo e o type
 type Props = TouchableOpacityProps & {
   title: string;
   type?: ButtonTypeStyleProps;
 }
 
+// por type ser opcional vou deixar por default primary
 export default function Button({ title, type = 'PRIMARY', ...rest}: Props) {
   return (
-    <Container {...rest}>
+    // O container por ser um butao to deicando o resto das nossas propriedades
+    <Container 
+      type={type}
+      {...rest}
+     >
         <Title>
           {title}
         </Title>
