@@ -1,7 +1,7 @@
 import { TouchableOpacity } from 'react-native'
 import theme from 'src/theme/theme';
 import { DefaultTheme } from 'styled-components';
-import styled from 'styled-components/native'
+import styled, { css } from 'styled-components/native'
 import  { UsersThree } from 'phosphor-react-native'
 
 // entre ( ) pq vou precisar das propriedades dele (para funcionar a tipagem no nosso .tsx)
@@ -20,9 +20,11 @@ export const Container = styled(TouchableOpacity)`
 `;
 
 export const Title = styled.Text`
-    font-size: ${({ theme}: DefaultTheme)  => theme.FONT_SIZE.MD}px;
-    color: ${({ theme }: DefaultTheme) => theme.COLORS.GRAY_200};
-    font-family: ${({ theme }: DefaultTheme) => theme.FONT_FAMILY.REGULAR};
+    ${({ theme}: DefaultTheme)  => css`
+        font-size:  ${theme.FONT_SIZE.MD}px;
+        color: ${theme.COLORS.GRAY_200};
+        font-family:  ${theme.FONT_FAMILY.REGULAR};
+    `};
 `;
 
 // .attrs  manipular a estilizacao da biblioteca 
