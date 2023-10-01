@@ -8,7 +8,7 @@ export default function ListEmpty({ message }: Props) {
   return (
     <Container>
         <Message>
-            {message}
+          {message}
         </Message>
     </Container>
   )
