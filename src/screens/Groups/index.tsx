@@ -28,18 +28,19 @@ export function Groups() {
           />
         )}
         contentContainerStyle={groups.length === 0 && {flex: 1}}
-        ListEmptyComponent={() =>
+        ListEmptyComponent={() => (
           <ListEmpty 
             message='Ainda nao criou um grupo? faca gora.'
-         />
-        }
+          />
+        )}
+        showsHorizontalScrollIndicator={false}
       />
 
       <Button 
         title='Criar nova turma'
         style={{ marginTop: 20}}
       />
-      
+
     </Container>
   );
 }
